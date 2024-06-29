@@ -36,7 +36,12 @@ const contactsSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         state.items.push(action.payload);
-        toast("Contact added!");
+        toast("Contact added!", {
+          style: {
+            color: "green",
+            border: "2px solid black",
+          },
+        });
       })
       .addCase(addContact.rejected, (state, action) => {
         state.isLoading = false;
@@ -53,7 +58,12 @@ const contactsSlice = createSlice({
           (contact) => contact.id === action.payload.id
         );
         state.items.splice(index, 1);
-        toast("Contact deleted!");
+        toast("Contact deleted!", {
+          style: {
+            color: "red",
+            border: "2px solid black",
+          },
+        });
       })
       .addCase(deleteContact.rejected, (state, action) => {
         state.isLoading = false;
