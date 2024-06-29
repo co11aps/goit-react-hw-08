@@ -22,7 +22,7 @@ export const RegistrationForm = () => {
 
   return (
     <>
-      <h4>Register, please!</h4>
+      <h4 className={css.caption}>Register, please</h4>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={css.label}>
           Username
