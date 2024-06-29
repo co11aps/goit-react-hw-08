@@ -1,8 +1,8 @@
 form.submitForm {
   display: flex;
   justify-content: center;
-    padding: 10px;
-  /* margin: 0 auto; */
+  padding: 10px;
+  margin: 0 auto;
   margin-top: 20px;
   /* width: 374px;
   height: 220px; */
@@ -15,11 +15,12 @@ form.submitForm {
   padding: 20px 10px;
   width: 350px;
   border: 2px solid black;
-  border-radius: 10px;
-  
+  border-radius: 8px;
+
   /* 
   padding: 10px; */
 }
+
 /* 
 input:-internal-autofill-selected {
   background-color: rgba(77, 69, 123, 0.7);
@@ -29,36 +30,42 @@ input.userName:hover {
   
 } */
 
-.userLabel, .numberLabel {
+.userLabel,
+.numberLabel {
   font-size: 15px;
-   -webkit-text-stroke-width: 0.5px; /* Товщина бордеру літери */
-  -webkit-text-stroke-color: black; /* Колір бордеру літери */
+  -webkit-text-stroke-width: 0.5px;
+  /* Товщина бордеру літери */
+  -webkit-text-stroke-color: black;
+  /* Колір бордеру літери */
 }
 
-input.userName, input.numberName {
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(220, 215, 247, 0.7);
+input.userName,
+input.numberName {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
 }
 
-input.userName:hover, input.userName:focus, input.numberName:hover, input.numberName:focus {
+input.userName:hover,
+input.userName:focus,
+input.numberName:hover,
+input.numberName:focus {
   background-color: white;
-  outline: none;
+  outline: 1px solid black;
 }
 
 .btn {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   margin: 0 auto;
-  margin-top: 10px; 
-  border: none;
+  margin-top: 16px;
+  border: 1px solid black;
   border-radius: 8px;
-  /* box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.7); */
-  background-color: rgba(220, 215, 247, 0.7);
-  
-   -webkit-text-stroke-width: 0.5px; /* Товщина бордеру літери */
-  -webkit-text-stroke-color: black; /* Колір бордеру літери */
+  padding: 8px;
+  background-color: rgba(233, 233, 233, 0.7);
+
   transition: background-color 0.3s ease;
 
 }
@@ -70,8 +77,9 @@ input.userName:hover, input.userName:focus, input.numberName:hover, input.number
 
 }
 
+
 .error {
-  color: red;
+  color: rgb(255, 0, 0);
   font-size: small;
 }
 
@@ -80,7 +88,8 @@ input.userName:hover, input.userName:focus, input.numberName:hover, input.number
   margin-top: 10px;
 }
 
-.userName, .numberName {
+.userName,
+.numberName {
   padding: 5px 10px;
-      font-size: 14px;
+  font-size: 14px;
 }
